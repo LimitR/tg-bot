@@ -1,8 +1,8 @@
 package main
 
 import (
-	"bot/cmd/database"
-	"bot/cmd/telegram"
+	"bot/internal/database"
+	"bot/internal/telegram"
 	"os"
 
 	"github.com/joho/godotenv"
