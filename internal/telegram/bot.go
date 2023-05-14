@@ -58,7 +58,6 @@ func NewBot(token string, db *database.Db) (*Bot, error) {
 
 func (b *Bot) Run() {
 	u := tgbotapi.NewUpdate(0)
-	u.Timeout = 60
 	updates := b.api.GetUpdatesChan(u)
 	for update := range updates {
 		if update.Message != nil {
